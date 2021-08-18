@@ -7,6 +7,8 @@ enum ForceSpeakerType { DEFAULT, FORCE_ON, FORCE_OFF }
 enum RingtoneUriType { DEFAULT, BUNDLE }
 
 class FlutterIncallManagerWebPlugin {
+  static void registerWith(registrar) {}
+
   /// Start InCallManager
   Future<void> start({
     bool auto = true,

@@ -1,0 +1,23 @@
+name: flutter_incall_manager
+description: Flutter InCall Manager plugin for iOS/Android.
+version: 0.1.0
+homepage: https://github.com/kangshaojun/flutter-incall-manager
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.cloudwebrtc.flutterincallmanager
+        pluginClass: FlutterIncallManagerPlugin
+      ios:
+        pluginClass: FlutterIncallManagerPlugin
+      web:
+        pluginClass: FluttertoastWebPlugin
+        fileName: flutter_incall_manager_web.dart
+        
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
